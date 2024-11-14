@@ -1,6 +1,8 @@
 /*
 primitive datatype(call by value)
 7 type: String , Number , Boolearn , null, nudefiend, Symbol(unique banaeke liye), bigInt
+Stack Menemoy
+copy milta hai 
 */
 const score = 100
 const scoreValue = 100.3
@@ -17,6 +19,8 @@ console.log(id === id2)
 /*
 non primitive , Reference
 Array , Object , Functions
+Heap 
+Original value ka refirence milta hai
 */
 const heros = ["abc" , "naagarj" , "doga"]
 
@@ -33,3 +37,30 @@ const myfunction = function(){
 console.log(typeof myfunction)
 console.log(typeof myObj)
 console.log(typeof heros)
+
+/* -----------------------------*/
+//Stack & Heap Memory
+
+let myName = "Ashutosh"
+
+let second = myName
+second = "Tripathi"
+
+
+console.log(myName);
+console.log(second);
+
+/*------------------------------*/
+
+let userOne = 
+{
+    email : "as@go.com",
+    upi: "123"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "asd@.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
