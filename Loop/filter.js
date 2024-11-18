@@ -36,3 +36,14 @@ const books = [
 })
   console.log(userBooks);
 
+/* ------Map-------  */
+
+const  number = [ 1,2,34,5,6,7,7]
+
+const nums = number.map((num)=> num +10)
+const numss = number.map((num)=> {return num +10})
+console.log(nums);
+
+/*-----Chaning----*/
+
+const sum = myNums.map((num) => num+10).map((num) => num + 1).filter((num) => num >= 40) 
